@@ -176,5 +176,23 @@ input{
     .tips{
         height: 55px;
     }
+
+    .result{
+        margin-top: auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        padding: 48px 38px;
+    }
+
+    .amount{
+        font-size: 55px;
+    }
+
+    .reset{
+        padding: 13px 0 13px 0;
+        margin-top: auto;
+    }
 }
 
