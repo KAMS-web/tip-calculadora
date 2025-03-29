@@ -20,12 +20,12 @@ let tipValue = 0.15;
 
 function billInputFun(){
     billvalue = parseFloat(billInput.value);
-    console.log(billvalue);
+   calculateTip()
 }
 
 function peopleInputFun(){
     peoplevalue = parseFloat(peopleInput.value);
-    console.log(peoplevalue);
+    calculateTip()
 }
 
 function handleClick(event){
@@ -38,3 +38,12 @@ function handleClick(event){
     });
     console.log(tipValue);
 }
+
+function calculateTip(){
+    if (peoplevalue >= 1){
+        let tipAmount = (billvalue * tipValue) / peoplevalue;
+        let total = (billvalue + tipAmount) / peoplevalue;
+        tipPerPerson.innerHTML = "$" + tipAmount.toFixed(2);
+        totalPerPerson.innerHTML = "$" + total.toFixed(2);
+    }
+}    
