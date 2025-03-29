@@ -121,7 +121,8 @@ input{
 
 #tip-custom input{
     box-sizing: border-box;
-    width: 100px;
+    width: 135px;
+    height: 54px;
 }
 
 .peoplelabel {
