@@ -5,6 +5,9 @@ const totalPerPerson = document.getElementById("total-amount");
 
 billInput.addEventListener("input", billInputFun);
 peopleInput.addEventListener("input", peopleInputFun);
+tips.forEach(function (val) {
+    val.addEventListener("click" , handleClick);
+});
 
 billInput.value = "0.0";
 peopleInput.value = "1";
