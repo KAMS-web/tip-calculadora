@@ -33,6 +33,8 @@ function handleClick(event){
         val.classlist.remove("active-tip");
         if (event.target.innerHTML === val.innerHTML){
             val.classlist.add("active-tip");
+            tipValue = parseFloat(val.innerHTML)/100
         }
     });
+    console.log(tipValue);
 }
