@@ -89,7 +89,8 @@ input{
     border-radius: 12px;
 }
 
-.tip-amount , .total{
+.tip-amount,
+ .total{
     display: flex;
     align-items: center;
     justify-content: space-between;
